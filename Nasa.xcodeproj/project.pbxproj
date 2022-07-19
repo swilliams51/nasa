@@ -9,18 +9,21 @@
 /* Begin PBXBuildFile section */
 		DBE3A77D2884B28C00FBED47 /* NasaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A77C2884B28C00FBED47 /* NasaApp.swift */; };
 		DBE3A77F2884B28C00FBED47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A77E2884B28C00FBED47 /* ContentView.swift */; };
-		DBE3A7812884B28E00FBED47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE3A7802884B28E00FBED47 /* Assets.xcassets */; };
 		DBE3A7842884B28E00FBED47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE3A7832884B28E00FBED47 /* Preview Assets.xcassets */; };
 		DBE3A78B2884B2BB00FBED47 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A78A2884B2BB00FBED47 /* Mission.swift */; };
+		DBE3A78E2887062300FBED47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE3A78D2887062300FBED47 /* LaunchScreen.storyboard */; };
+		DBE3A78F28870B1A00FBED47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE3A7802884B28E00FBED47 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBE3A7792884B28C00FBED47 /* Nasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE3A77C2884B28C00FBED47 /* NasaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaApp.swift; sourceTree = "<group>"; };
 		DBE3A77E2884B28C00FBED47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DBE3A7802884B28E00FBED47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBE3A7802884B28E00FBED47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Nasa/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		DBE3A7832884B28E00FBED47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBE3A78A2884B2BB00FBED47 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		DBE3A78C2886FC9400FBED47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DBE3A78D2887062300FBED47 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +56,13 @@
 		DBE3A77B2884B28C00FBED47 /* Nasa */ = {
 			isa = PBXGroup;
 			children = (
+				DBE3A78C2886FC9400FBED47 /* Info.plist */,
 				DBE3A77C2884B28C00FBED47 /* NasaApp.swift */,
 				DBE3A77E2884B28C00FBED47 /* ContentView.swift */,
 				DBE3A7802884B28E00FBED47 /* Assets.xcassets */,
 				DBE3A7822884B28E00FBED47 /* Preview Content */,
 				DBE3A78A2884B2BB00FBED47 /* Mission.swift */,
+				DBE3A78D2887062300FBED47 /* LaunchScreen.storyboard */,
 			);
 			path = Nasa;
 			sourceTree = "<group>";
@@ -128,8 +133,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE3A78E2887062300FBED47 /* LaunchScreen.storyboard in Resources */,
+				DBE3A78F28870B1A00FBED47 /* Assets.xcassets in Resources */,
 				DBE3A7842884B28E00FBED47 /* Preview Assets.xcassets in Resources */,
-				DBE3A7812884B28E00FBED47 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +274,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nasa/Preview Content\"";
-				DEVELOPMENT_TEAM = 2H57N7ZHA5;
+				DEVELOPMENT_TEAM = R2A6TWK69S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nasa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -297,15 +305,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nasa/Preview Content\"";
-				DEVELOPMENT_TEAM = 2H57N7ZHA5;
+				DEVELOPMENT_TEAM = R2A6TWK69S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nasa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
