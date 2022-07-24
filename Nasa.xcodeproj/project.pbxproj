@@ -15,6 +15,8 @@
 		DBE3A78F28870B1A00FBED47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE3A7802884B28E00FBED47 /* Assets.xcassets */; };
 		DBE3A7912888556500FBED47 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A7902888556500FBED47 /* LaunchView.swift */; };
 		DBE3A7932889B77B00FBED47 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A7922889B77B00FBED47 /* Level.swift */; };
+		DBE3A798288C505000FBED47 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A797288C505000FBED47 /* HomeView.swift */; };
+		DBE3A79A288C857400FBED47 /* PayWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3A799288C857400FBED47 /* PayWallView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		DBE3A78D2887062300FBED47 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBE3A7902888556500FBED47 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		DBE3A7922889B77B00FBED47 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		DBE3A797288C505000FBED47 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DBE3A799288C857400FBED47 /* PayWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +66,10 @@
 			children = (
 				DBE3A78C2886FC9400FBED47 /* Info.plist */,
 				DBE3A77C2884B28C00FBED47 /* NasaApp.swift */,
-				DBE3A77E2884B28C00FBED47 /* ContentView.swift */,
+				DBE3A796288C503000FBED47 /* Views */,
 				DBE3A7802884B28E00FBED47 /* Assets.xcassets */,
 				DBE3A7822884B28E00FBED47 /* Preview Content */,
 				DBE3A78A2884B2BB00FBED47 /* Mission.swift */,
-				DBE3A78D2887062300FBED47 /* LaunchScreen.storyboard */,
-				DBE3A7902888556500FBED47 /* LaunchView.swift */,
 				DBE3A7922889B77B00FBED47 /* Level.swift */,
 			);
 			path = Nasa;
@@ -79,6 +81,18 @@
 				DBE3A7832884B28E00FBED47 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DBE3A796288C503000FBED47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3A77E2884B28C00FBED47 /* ContentView.swift */,
+				DBE3A797288C505000FBED47 /* HomeView.swift */,
+				DBE3A78D2887062300FBED47 /* LaunchScreen.storyboard */,
+				DBE3A7902888556500FBED47 /* LaunchView.swift */,
+				DBE3A799288C857400FBED47 /* PayWallView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE3A79A288C857400FBED47 /* PayWallView.swift in Sources */,
 				DBE3A78B2884B2BB00FBED47 /* Mission.swift in Sources */,
 				DBE3A7912888556500FBED47 /* LaunchView.swift in Sources */,
 				DBE3A77F2884B28C00FBED47 /* ContentView.swift in Sources */,
+				DBE3A798288C505000FBED47 /* HomeView.swift in Sources */,
 				DBE3A7932889B77B00FBED47 /* Level.swift in Sources */,
 				DBE3A77D2884B28C00FBED47 /* NasaApp.swift in Sources */,
 			);

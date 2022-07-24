@@ -18,21 +18,11 @@ struct Mission: Identifiable {
 
 
 class Missions: ObservableObject {
-    @Published var missions:[Mission] = Mission.list
-    @Published var level: Level = .full
-    
-    func getNames() -> [String] {
-        var listOfMissions: [String] = [String]()
-        
-        if level == .basic {
-            listOfMissions.append(missions[0].name)
-        } else {
-            for x in 0..<missions.count {
-                listOfMissions.append(missions[x].name)
-            }
-        }
-        
-        return listOfMissions
+    @Published var missions:[Mission]
+
+    init () {
+        missions = [Mission]()
+        missions = Mission.list
     }
     
     func getMissionDetails(aName: String) -> String {

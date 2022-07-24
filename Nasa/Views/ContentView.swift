@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var nasaMissions = Missions()
-    var myMissions: [String] = Missions().getNames()
-     
+    @ObservedObject var nasaMissions: Missions
+    @State var missionNames: [String] = [String]()
+    @Binding var level: Level
     @State var selectedMission: String = "Apollo"
     
     var body: some View {
         NavigationView {
             Form {
                 Picker(selection: $selectedMission, label: Text("mission name:").font(.subheadline)) {
-                    ForEach(myMissions, id: \.self) { name in
+                    ForEach(missionNames, id: \.self) { name in
                            Text(name)
                     }
                 }
@@ -40,14 +40,25 @@ struct ContentView: View {
             }
             .navigationTitle("Nasa Missions")
         }
-     
+        
+        .onAppear {
+            if level == .basic {
+                missionNames.append(nasaMissions.missions[0].name)
+            } else {
+                for x in 0..<nasaMissions.missions.count {
+                    missionNames.append(nasaMissions.missions[x].name)
+                }
+            }
+            
+        }
     }
     
+  
     
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(nasaMissions: Missions(), level: .constant(.basic))
     }
 }

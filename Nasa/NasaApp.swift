@@ -11,12 +11,13 @@ import SwiftUI
 struct NasaApp: App {
     
     @State var showLaunchView: Bool = true
+    @State var level: Level = .basic
     
     var body: some Scene {
         WindowGroup {
             
             ZStack {
-                ContentView()
+                HomeView(level: $level)
                 if showLaunchView == true {
                     LaunchView(showLaunchView: $showLaunchView)
                         .transition(.move(edge: .leading))
