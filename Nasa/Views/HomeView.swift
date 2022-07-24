@@ -23,7 +23,10 @@ struct HomeView: View {
                     Text("Subscription Details")
                 }
             }
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
         }
+       
     }
 }
 

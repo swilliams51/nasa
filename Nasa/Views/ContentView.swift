@@ -39,6 +39,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Nasa Missions")
+            .navigationBarTitleDisplayMode(.inline)
         }
         
         .onAppear {
