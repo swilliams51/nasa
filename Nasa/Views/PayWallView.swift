@@ -13,14 +13,39 @@ struct PayWallView: View {
     var body: some View {
         NavigationView {
             Form{
-                HStack {
-                    Text("Access Level:")
-                    Picker(selection: $level, label: Text("")) {
-                        ForEach(Level.allCases, id: \.self) { aLevel in
-                            Text(aLevel.toString())
+                Section ("Subscription evel") {
+                    HStack {
+                        Text("Access Level:")
+                        Spacer()
+                        Text("\(level.toString())")
+                    }
+                }
+                
+                Section ("Subscription") {
+                    HStack {
+                        Text("Frequency:")
+                        Spacer()
+                        Text("Monthly")
+                    }
+                    HStack {
+                        Text("Type:")
+                        Spacer()
+                        Text("Auto-Renewable")
+                    }
+                    HStack {
+                        Text("Price:")
+                        Spacer()
+                        Text("$1.99")
+                    }
+                    
+                    HStack {
+                        Spacer()
+                        Button ("Purchase Now") {
+                            
                         }
                     }
                 }
+               
             }
             .navigationTitle("Subscription Type")
             .navigationBarTitleDisplayMode(.inline)

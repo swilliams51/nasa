@@ -18,6 +18,9 @@ struct NasaApp: App {
             
             ZStack {
                 HomeView(level: $level)
+                    .onAppear {
+                        PurchaseManager.shared.configure()
+                    }
                 if showLaunchView == true {
                     LaunchView(showLaunchView: $showLaunchView)
                         .transition(.move(edge: .leading))

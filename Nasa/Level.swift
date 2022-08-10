@@ -8,6 +8,8 @@
 import Foundation
 
 enum Level: String {
+    
+    // 09f92e0d3dbc4128b3a3508eab0630a1
     case basic, full
     
     static let allCases: [Level] = [.basic, .full]

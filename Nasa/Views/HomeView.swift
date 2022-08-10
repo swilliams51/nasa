@@ -26,7 +26,24 @@ struct HomeView: View {
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
         }
-       
+        .task {
+            if let sku = await PurchaseManager.shared.getProducts() {
+                print("\(sku.product.localizedDescription)")
+                print("\(sku.product.localizedTitle)")
+                print("\(sku.product.price)")
+            }
+        }
+//        .task {
+//            <#code#>
+//        }
+    }
+    
+    func hasPurchased() async {
+        if await PurchaseManager.shared.hasPurchased() {
+            level = .full
+        } else {
+            level = .basic
+        }
     }
 }
 
